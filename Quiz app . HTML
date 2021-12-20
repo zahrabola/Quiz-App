@@ -24,8 +24,7 @@
             <span id="total-question">20 </span>
           </div>
         </div>
-      </div>
-    </div>
+     
     
     
     <div class="quiz-body">
@@ -39,6 +38,13 @@
       <div id="Results"></div>
     </div>
     
+        <div class="quiz-foot">
+          <button type="button" id="check-answer">Check Answer</button>
+          <button type="button" id="play-again">Play Again</button>
+        </div>
+    
+     </div>
+    </div>
   <script src="main.js"></script>
   </body>
 </html>
