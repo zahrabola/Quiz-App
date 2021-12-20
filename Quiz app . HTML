@@ -26,6 +26,19 @@
         </div>
       </div>
     </div>
+    
+    
+    <div class="quiz-body">
+      <h2 class="quiz-question" id="question">what is the question</h2>
+      <ul class="quiz-options">
+        <li>1. text transfer package</li>
+        <li>2. text transfer package</li>
+        <li>3. text transfer package</li>
+        <li>4. text transfer package</li>
+      </ul>
+      <div id="Results"></div>
+    </div>
+    
   <script src="main.js"></script>
   </body>
 </html>
