@@ -1,0 +1,115 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  align-items: center;
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body {
+  font-family: "Courier New", Courier, monospace;
+  min-height: 100vh;
+  background-color: thistle;
+  align-items: center;
+}
+.wrapper {
+  background-color: rgb(245, 239, 245);
+  padding: 30px 40px 40px 30px;
+  width: 400px;
+  height: 450px;
+  border: 20px;
+  position: relative;
+}
+.quiz-title {
+  text-align: center;
+  font-size: 20px;
+}
+.quiz-score {
+  text-align: center;
+  font-weight: 500;
+  font-size: 15px;
+  width: 100px;
+  height: 20px;
+  margin: 10px auto;
+  color: rgb(201, 163, 201);
+}
+.quiz-question {
+  font-size: 15px;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 5px;
+  margin-bottom: 40px;
+}
+.category {
+  font-size: 12px;
+  font-weight: 400px;
+  background-color: thistle;
+  color: rgb(245, 239, 245);
+  padding: 15px 30px;
+  border-radius: 15px;
+  margin-top: 10px;
+  display: inline;
+}
+li {
+  list-style: none;
+}
+.quiz-options li {
+  border-radius: 10px;
+  font-weight: 400;
+  margin: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: 1px solid thistle;
+  background-color: thistle;
+  color: rgb(245, 239, 245);
+  box-shadow: 0, 4px 0 0;
+  transition: 300ms;
+}
+li:hover {
+  background-color: rgb(189, 152, 189);
+  color: black;
+  border-color: thistle;
+  box-shadow: 0, 4px 0 0;
+}
+li:active {
+  transform: scale(0.9);
+}
+/* selected button */
+.selected {
+  background-color: rgb(245, 239, 245) !important;
+  color: black !important;
+  border-color: thistle;
+  box-shadow: 0, 4px 0 0;
+}
+
+.quiz-foot button {
+  border-color: thistle;
+  border-radius: 3px;
+  outline: 0;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 10px;
+  font-weight: 400;
+  padding: 5px 10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: block;
+  background-color: rgb(245, 239, 245);
+  color: black;
+  letter-spacing: 2px;
+  box-shadow: 0, 4px 0 0;
+}
+.quiz-foot button:hover {
+  background-color: rgb(189, 152, 189);
+  box-shadow: 0, 4px 0 0;
+}
+.quiz-foot button:active {
+  transform: scale(0.9);
+}
+
+#play-again {
+  display: none;
+}
