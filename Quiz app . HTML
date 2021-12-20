@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="main.css" />
   </head>
-  <body>
+  <body class="flex">
    <div class="wrapper">
       <div class="quiz-container">
         <div class="quiz-head">
