@@ -15,6 +15,17 @@
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+   <div class="wrapper">
+      <div class="quiz-container">
+        <div class="quiz-head">
+          <h1 class="quiz-title">Quiz Game</h1>
+          <div class="quiz-score flex">
+            <span id="correct-score"> 0 </span> |
+            <span id="total-question">20 </span>
+          </div>
+        </div>
+      </div>
+    </div>
   <script src="main.js"></script>
   </body>
 </html>
