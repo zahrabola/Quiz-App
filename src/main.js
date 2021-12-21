@@ -22,6 +22,17 @@ async function loadQuestion() {
   showQuestion(data.results[0]);
 }
 
+function eventListeners() {
+  _checkBtn.addEventListener("click", checkAnswer);
+  _playAgainBtn.addEventListener("click", restartQuiz);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  loadQuestion();
+  eventListeners();
+  _totalQuestion.textContent = totalQuestion;
+  _correctScore.textContent = correctScore;
+});
 function showQuestion(data) {
   correctAnswer = data.correct_answer;
   let incorrectAnswer = data.incorrect_answer;
