@@ -11,7 +11,7 @@ const _result = document.getElementById("result");
 
 let correctAnswer = "",
   correctScore = (askedCount = 0),
-  totalQuestion = 20;
+  totalQuestion = 30;
 
 async function loadQuestion() {
   const APIUrl =
