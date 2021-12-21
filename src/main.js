@@ -48,13 +48,23 @@ function selectorOption (){
             }
             option.classList.add ('selected');
          });
-  });
+  };
 }
+
 function checkAnswer(){
     _checkBtn.disabled = true;
     if(_options.querySelector('.selected')){
         let selectedAnswer = _options.querySelector('.selected span'). textContent;
-        console.log(selectedAnswer);
-
+        if (selectedAnswer = correctAnswer){
+            correctScore ++ ;
+             _result.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
+    } else {
+      _result.innerHTML = `<p><i class = "fas fa-times"></i>Incorrect Answer!</p> <small><b>Correct Answer: </b>${correctAnswer}</small>`;
     }
+    checkCount();
+  } else {
+    _result.innerHTML = `<p><i class = "fas fa-question"></i>Please select an option!</p>`;
+    _checkBtn.disabled = false;
+  }
 }
+      
