@@ -65,7 +65,7 @@ function checkAnswer(){
     _checkBtn.disabled = true;
     if(_options.querySelector('.selected')){
         let selectedAnswer = _options.querySelector('.selected span'). textContent;
-        if (selectedAnswer = correctAnswer){
+          if (selectedAnswer == HTMLDecode(correctAnswer)) {
             correctScore ++ ;
              _result.innerHTML = `<p><i class = "fas fa-check"></i>Correct Answer!</p>`;
     } else {
