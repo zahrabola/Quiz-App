@@ -4,7 +4,9 @@ const _question = document.getElementById("question");
 const _question = document.querySelector(".quiz-options");
 const _correctScore = document.getElementById('correct-score');
 const _totalQuestion = document.getElementById('total-question');
-
+const _checkBtn = document.getElementById("check-answer");
+const _playAgainBtn = document.getElementById("play-again");
+const _result = document.getElementById("result");
 
 
 async function loadQuestion() {
@@ -23,6 +25,14 @@ function showQuestion(data) {
     0,
     correctAnswer
   );
+  
+  document.addEventListener('DOMContentLoaded'. () => {
+loadQuestion();
+eventListeners ();
+_totalQuestion.textContent = totalQuestion;
+_correctScore.textContent = correctScore;
+});
+
   
  // console.log(optionsList);
   //console.log(correctAnswer);}
