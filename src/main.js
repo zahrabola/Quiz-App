@@ -12,7 +12,7 @@ async function loadQuestion() {
   console.log(data);
 }
 function showQuestion(data) {
-  let correctAnswer = data.correct_answer;
+  correctAnswer = data.correct_answer;
   let incorrectAnswer = data.incorrect_answer;
   let optionsList = incorrectAnswer;
   optionsList.splice(
@@ -24,4 +24,16 @@ function showQuestion(data) {
  // console.log(optionsList);
   //console.log(correctAnswer);
 }
+
+_question.innerHTML =
+    '${data.question} <br> <span class= "category"> ${data.category} </span>';
+  _options.innerHTML = ` ${optionsList
+    .map(
+      (option, index) => `
+            <li> ${index + 1}. <span>${option}</span> </li> `
+    )
+    .join("")}
+    `;
+}
+
 loadQuestion();
