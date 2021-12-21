@@ -65,16 +65,16 @@ _question.innerHTML =
       selectOption();
 }
 
-function selectorOption (){
-    _options.querySelectorAll ('li').forEach (option) => {
-        option.addEventListener ('click', ()=> {
-            if(_options.querySelector('.selector')){
-                const activeOption = _options.querySelector('.selected');
-                activeOption.classList.remove('selected');
-            }
-            option.classList.add ('selected');
-         });
-  };
+function selectOption() {
+  _options.querySelectorAll("li").forEach(function (option) {
+    option.addEventListener("click", function () {
+      if (_options.querySelector(".selected")) {
+        const activeOption = _options.querySelector(".selected");
+        activeOption.classList.remove("selected");
+      }
+      option.classList.add("selected");
+    });
+  });
 }
 
 function checkAnswer(){
