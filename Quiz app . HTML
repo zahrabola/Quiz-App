@@ -30,14 +30,16 @@
  
         <div class="quiz-body">
           <h2 class="quiz-question" id="question">
+             <!------------
             what is the question <br />
-            <span class="category"> Film </span>
+            <span class="category"> Film celebrities </span>
+          --->
           </h2>
       <ul class="quiz-options">
-        <li>1. text transfer package</li>
-        <li>2. text transfer package</li>
-        <li>3. text transfer package</li>
-        <li>4. text transfer package</li>
+        <!----- <li>1. text transfer package</li>
+            <li>2. text transfer package</li>
+            <li>3. text transfer package</li>
+            <li>4. text transfer package</li> --->
       </ul>
       <div id="Results"></div>
     </div>
