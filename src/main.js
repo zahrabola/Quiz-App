@@ -2,6 +2,9 @@
 
 const _question = document.getElementById("question");
 const _question = document.querySelector(".quiz-options");
+const _correctScore = document.getElementById('correct-score');
+const _totalQuestion = document.getElementById('total-question');
+
 
 
 async function loadQuestion() {
