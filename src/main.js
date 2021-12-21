@@ -116,3 +116,16 @@ function checkCount() {
     }, 300);
   }
 }
+function setCount() {
+  _totalQuestion.textContent = totalQuestion;
+  _correctScore.textContent = correctScore;
+}
+
+function restartQuiz() {
+  correctScore = askedCount = 0;
+  _playAgainBtn.style.display = "none";
+  _checkBtn.style.display = "block";
+  _checkBtn.disabled = false;
+  setCount();
+  loadQuestion();
+}
