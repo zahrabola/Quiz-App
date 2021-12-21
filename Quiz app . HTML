@@ -25,24 +25,21 @@
           </div>
         </div>
      
-    
-    
- 
-        <div class="quiz-body">
+     <div class="quiz-body">
           <h2 class="quiz-question" id="question">
-             <!------------
             what is the question <br />
             <span class="category"> Film celebrities </span>
-          --->
           </h2>
-      <ul class="quiz-options">
-        <!----- <li>1. text transfer package</li>
+          <ul class="quiz-options">
+            <!-- >1. text transfer package</li>
             <li>2. text transfer package</li>
             <li>3. text transfer package</li>
             <li>4. text transfer package</li> --->
-      </ul>
-      <div id="Results"></div>
-    </div>
+          </ul>
+          <div id="Result"></div>
+        </div>
+    
+ 
     
         <div class="quiz-foot">
           <button type="button" id="check-answer">Check Answer</button>
