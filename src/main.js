@@ -21,7 +21,7 @@ function showQuestion(data) {
     correctAnswer
   );
   
-  console.log(optionsList);
-  console.log(correctAnswer);
+ // console.log(optionsList);
+  //console.log(correctAnswer);
 }
 loadQuestion();
