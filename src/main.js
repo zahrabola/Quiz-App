@@ -9,13 +9,19 @@ const _playAgainBtn = document.getElementById("play-again");
 const _result = document.getElementById("result");
 
 
+let correctAnswer = "",
+  correctScore = (askedCount = 0),
+  totalQuestion = 20;
+
 async function loadQuestion() {
   const APIUrl =
     "https://opentdb.com/api.php?amount=20&category=11&type=multiple";
-  const result = await fetch("${ApiUrl}");
+  const result = await fetch(`${APIUrl}`);
   const data = await result.json();
-  console.log(data);
+  _result.innerHTML = "";
+  showQuestion(data.results[0]);
 }
+
 function showQuestion(data) {
   correctAnswer = data.correct_answer;
   let incorrectAnswer = data.incorrect_answer;
