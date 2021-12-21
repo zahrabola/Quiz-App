@@ -11,3 +11,17 @@ async function loadQuestion() {
   const data = await result.json();
   console.log(data);
 }
+function showQuestion(data) {
+  let correctAnswer = data.correct_answer;
+  let incorrectAnswer = data.incorrect_answer;
+  let optionsList = incorrectAnswer;
+  optionsList.splice(
+    Math.floor(Math.random() * (incorrectAnswer.lenght + 1)),
+    0,
+    correctAnswer
+  );
+  
+  console.log(optionsList);
+  console.log(correctAnswer);
+}
+loadQuestion();
