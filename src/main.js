@@ -25,8 +25,7 @@ function showQuestion(data) {
   );
   
  // console.log(optionsList);
-  //console.log(correctAnswer);
-}
+  //console.log(correctAnswer);}
 
 _question.innerHTML =
     '${data.question} <br> <span class= "category"> ${data.category} </span>';
