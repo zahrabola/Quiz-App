@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
   _correctScore.textContent = correctScore;
 });
 function showQuestion(data) {
+   _checkBtn.disabled = false;
   correctAnswer = data.correct_answer;
   let incorrectAnswer = data.incorrect_answer;
   let optionsList = incorrectAnswer;
@@ -50,9 +51,7 @@ _totalQuestion.textContent = totalQuestion;
 _correctScore.textContent = correctScore;
 });
 
-  
- // console.log(optionsList);
-  //console.log(correctAnswer);}
+ 
 
 _question.innerHTML =
     '${data.question} <br> <span class= "category"> ${data.category} </span>';
