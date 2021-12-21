@@ -36,6 +36,6 @@ _question.innerHTML =
     )
     .join("")}
     `;
+      selectOption();
 }
 
-loadQuestion();
