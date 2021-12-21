@@ -30,7 +30,7 @@ _question.innerHTML =
   _options.innerHTML = ` ${optionsList
     .map(
       (option, index) => `
-            <li> ${index + 1}. <span>${option}</span> </li> `
+            <li> ${index + 20}. <span>${option}</span> </li> `
     )
     .join("")}
     `;
