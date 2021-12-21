@@ -94,3 +94,25 @@ function checkAnswer(){
   }
 }
       
+function HTMLDecode(textString) {
+  let doc = new DOMParser().parseFromString(textString, "text/html");
+  return doc.documentElement.textContent;
+}
+
+function checkCount() {
+  askedCount++;
+  setCount();
+  if (askedCount == totalQuestion) {
+    setTimeout(function () {
+      console.log("");
+    }, 5000);
+
+    _result.innerHTML += `<p>Your score is ${correctScore}.</p>`;
+    _playAgainBtn.style.display = "block";
+    _checkBtn.style.display = "none";
+  } else {
+    setTimeout(function () {
+      loadQuestion();
+    }, 300);
+  }
+}
