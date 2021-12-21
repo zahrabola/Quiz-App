@@ -115,3 +115,8 @@ li:active {
   display: none;
 }
 
+#result {
+  text-align: center;
+  font-weight: 400;
+  padding: 12px;
+}
